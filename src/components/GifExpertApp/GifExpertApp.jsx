@@ -14,7 +14,7 @@ const GifExpertApp = () => {
 	const onAddCategoria = (inputValue) => {
 		if (categoria.indexOf(inputValue) !== -1) return;
 
-		setCategoria([...categoria, inputValue]);
+		setCategoria([inputValue, ...categoria]);
 	};
 	console.log("render");
 	const apikey = "6pLfEjnR18zDQ74fEZmBuvMgkUDqphyE";
