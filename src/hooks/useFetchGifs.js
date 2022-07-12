@@ -4,6 +4,7 @@ import { getGifs } from "../helpers/getGifs";
 const useFetchGifs = (categoria) => {
 
     const [gif, setGif] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
 
 
     useEffect(() => {
@@ -16,6 +17,7 @@ const useFetchGifs = (categoria) => {
             // console.log("Effect: ", resp);
 
             setGif(resp);
+            setIsLoading(false)
         });
 
         //Segunda forma
@@ -25,7 +27,7 @@ const useFetchGifs = (categoria) => {
 
     return {
         images: gif,
-        isLoading: false
+        isLoading: isLoading
     }
 }
 

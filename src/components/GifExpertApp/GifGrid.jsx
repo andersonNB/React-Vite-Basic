@@ -96,6 +96,8 @@ const GifGrid = ({categoria}) => {
 
 	return (
 		<>
+			{isLoading && <h2>Cargando Imagenes...</h2>}
+
 			<div className="card-grid">
 				{images.map((gifs) => {
 					return <GifItem key={gifs.id} {...gifs} />;

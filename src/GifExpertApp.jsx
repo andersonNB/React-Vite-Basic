@@ -1,10 +1,11 @@
 // ya no es necesario importarlo
 // import React from "react";
 import {useState} from "react";
-import AddCategory from "./AddCategory";
-import GifGrid from "./GifGrid";
+import {AddCategory, GifGrid} from "./components";
+
+// import GifGrid from "./GifGrid";
 // import CounterApp from "../CounterApp";
-import "./styles.css";
+import "./components/GifExpertApp/styles.css";
 
 const GifExpertApp = () => {
 	const [img, setImage] = useState("");
