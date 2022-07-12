@@ -31,7 +31,7 @@ const GifGrid = ({categoria}) => {
 	// const [gif, setGif] = useState([]);
 
 	//Esto es un hook por lo tanto sus parametros se envian normalmente y se reciben
-	//normalmente, casi contrario con las props
+	//normalmente, casi contrario a como se envian las props
 	const {images, isLoading} = useFetchGifs(categoria);
 
 	// Segunda forma
@@ -91,7 +91,7 @@ const GifGrid = ({categoria}) => {
 	// 	console.log(gifs);
 	// };
 
-	// Directamente puesta aquí la función es mala practica
+	// Directamente puesta aquí la función es mala práctica
 	// getGifs(categoria);
 
 	return (
